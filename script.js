@@ -19,6 +19,7 @@ clear.addEventListener("click", () => {
     output.value = ""
 })
 cal.addEventListener("click", () => {
-    outputvalue = eval(output.value)
-    output.value = outputvalue
+    let outputvalue = String(output.value)
+    let value = outputvalue.replace("X","*")
+    output.value = eval(value)
 })
